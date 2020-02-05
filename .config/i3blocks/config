@@ -4,6 +4,12 @@ markup=none
 
 separator_block_width=14
 
+[graphics_mem]
+command=/usr/share/i3blocks/graphics.sh
+interval=10
+color=#3AB61A
+
+
 [load]
 label= 
 command=/usr/share/i3blocks/load_average
