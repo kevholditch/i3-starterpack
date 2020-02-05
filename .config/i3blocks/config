@@ -1,0 +1,23 @@
+command=/usr/share/i3blocks/$BLOCK_NAME
+separator_block_width=15
+markup=none
+
+separator_block_width=14
+
+[load]
+label= 
+command=/usr/share/i3blocks/load_average
+interval=10
+color=#f59335
+
+[disk]
+label= 
+command=/usr/share/i3blocks/disk / 
+interval=30
+color=#fec7cd
+
+[time]
+command=date '+%a %-d %b %H:%M '
+interval=5
+color=#81a1c1
+
