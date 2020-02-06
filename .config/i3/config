@@ -5,12 +5,12 @@
 # this file and re-run i3-config-wizard(1).
 #
 
-font pango: Noto Sans 5
+font pango: Noto Sans 7
 
 #autostart
 exec --no-startup-id hsetroot -center ~/.wallpaper.png
 exec --no-startup-id xsettingsd &
-exec --no-startup-id /home/kevin/screen1920.sh &
+exec --no-startup-id /home/kevin/screen2560.sh &
 exec --no-startup-id setxkbmap -layout gb 
 #exec --no-startup-id compton -b
 
@@ -24,7 +24,7 @@ set $mod Mod4
 # is used in the bar {} block below.
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono 8
+#font pango:DejaVu Sans Mono 8
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # The font above is very space-efficient, that is, it looks good, sharp and
@@ -160,7 +160,7 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        font pango: Noto Sans 5
+        font pango: Noto Sans 7, Icons 7 
         colors {
             background #2f343f
             statusline #2f343f
@@ -172,7 +172,7 @@ bar {
             inactive_workspace      #2f343f #2f343f #d8dee8
             urgent_workspacei       #2f343f #ebcb8b #2f343f
         }
-        status_command i3status
+        status_command i3blocks
 }
 
 # window rules, you can find the window class using xprop
